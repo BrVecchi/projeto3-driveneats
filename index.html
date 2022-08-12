@@ -19,114 +19,128 @@
     <div class="corpo">
         <div class="texto-info">Primeiro, seu prato</div>
         <div class="pratos">
-            <div class="prato">
+            <div class="prato" id="bife" onclick="marcarPrato('#bife'); mudarBotao();">
                 <div class="imagem">
                     <img src="./imgs/pratos/bife-acebolado.JPG">
                 </div>
                 <p class="nome">Bife Acebolado</p>
                 <p class="descricao">Com cenoura e banana amilanesa</p>
                 <p class="preco">R$ 14,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="prato" id="brasileira" onclick="marcarPrato('#brasileira'); mudarBotao();">
                 <div class="imagem">
                     <img src="./imgs/pratos/com-farofa.jpg">
                 </div>
                 <p class="nome">A Brasileira</p>
                 <p class="descricao">Com couve, cenoura, farofa e banana amilanesa</p>
                 <p class="preco">R$ 14,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="prato" id="penne" onclick="marcarPrato('#penne'); mudarBotao();">
                 <div class="imagem">
                     <img src="./imgs/pratos/penne.jpg">
                 </div>
                 <p class="nome">Penne 4 Queijos</p>
                 <p class="descricao">Com mignon ao molho madeira com ervilhas</p>
                 <p class="preco">R$ 14,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="prato" id="risoto" onclick="marcarPrato('#risoto'); mudarBotao();">
                 <div class="imagem">
                     <img src="./imgs/pratos/risoto.JPG">
                 </div>
                 <p class="nome">Risoto Alho Poró</p>
                 <p class="descricao">Com alcatra ao molho madeira com ervilhas</p>
                 <p class="preco">R$ 14,90</p>
+                <div id="borda"></div>
             </div>
         </div>
         <div class="texto-info">Agora, sua bebida</div>
-        <div class="pratos">
-            <div class="prato">
+        <div class="bebidas">
+            <div class="bebida" id="coca" onclick="marcarBebida('#coca'); mudarBotao();">
                 <div class="imagem">
-                    <img src="./imgs/bebidas/coquinha_gelada 1.png">
+                    <img src="./imgs/bebidas/coca (1).jpg">
                 </div>
                 <p class="nome">Coca gelada</p>
-                <p class="descricao">Um pouco de batata, um pouco de salada</p>
+                <p class="descricao">Lata 350ml</p>
                 <p class="preco">R$ 4,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="bebida" id="sprite" onclick="marcarBebida('#sprite'); mudarBotao();">
                 <div class="imagem">
-                    <img src="./imgs/bebidas/coquinha_gelada 1.png">
+                    <img src="./imgs/bebidas/sprite (1).jpg">
                 </div>
                 <p class="nome">Sprite gelada</p>
                 <p class="descricao">Lata 350ml</p>
                 <p class="preco">R$ 4,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="bebida" id="fanta" onclick="marcarBebida('#fanta'); mudarBotao();">
                 <div class="imagem">
-                    <img src="./imgs/bebidas/coquinha_gelada 1.png">
+                    <img src="./imgs/bebidas/fanta (1).jpg">
                 </div>
                 <p class="nome">Fanta gelada</p>
                 <p class="descricao">Lata 350ml</p>
                 <p class="preco">R$ 4,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="bebida" id="guarana" onclick="marcarBebida('#guarana'); mudarBotao();">
                 <div class="imagem">
-                    <img src="./imgs/bebidas/coquinha_gelada 1.png">
+                    <img src="./imgs/bebidas/guarana (1).jpg">
                 </div>
                 <p class="nome">Guaraná gelado</p>
                 <p class="descricao">Lata 350ml</p>
                 <p class="preco">R$ 4,90</p>
+                <div id="borda"></div>
             </div>
         </div>
         <div class="texto-info">Por fim, sua sobremesa</div>
-        <div class="pratos">
-            <div class="prato">
+        <div class="sobremesas">
+            <div class="sobremesa" id="arroz-doce" onclick="marcarSobremesa('#arroz-doce'); mudarBotao();">
                 <div class="imagem">
                     <img src="./imgs/sobremesas/arroz-doce.JPG">
                 </div>
                 <p class="nome">Arroz Doce</p>
                 <p class="descricao">Com ou sem canela</p>
                 <p class="preco">R$ 7,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="sobremesa" id="bolo" onclick="marcarSobremesa('#bolo'); mudarBotao();">
                 <div class="imagem">
                     <img src="./imgs/sobremesas/bolo-pote.JPG">
                 </div>
                 <p class="nome">Bolo de Pote</p>
                 <p class="descricao">De morango</p>
                 <p class="preco">R$ 7,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="sobremesa" id="fruta" onclick="marcarSobremesa('#fruta'); mudarBotao();">
                 <div class="imagem">
                     <img src="./imgs/sobremesas/salada-fruta.JPG">
                 </div>
                 <p class="nome">Salada de Fruta</p>
                 <p class="descricao">Variadas frutas</p>
                 <p class="preco">R$ 7,90</p>
+                <div id="borda"></div>
             </div>
-            <div class="prato">
+            <div class="sobremesa" id="tortinha" onclick="marcarSobremesa('#tortinha'); mudarBotao();">
                 <div class="imagem">
                     <img src="./imgs/sobremesas/tortinha.JPG">
                 </div>
                 <p class="nome">Tortinha de Maça</p>
                 <p class="descricao">Uma delícia</p>
                 <p class="preco">R$ 7,90</p>
+                <div id="borda"></div>
             </div>
         </div> 
     </div>
     <div class="bottom">
-        <div class="botao-confirmar">
-            <p class="botao-texto"></p>
+        <div class="indisponivel" id="botao">
+            <button>Selecione os 3 itens para fechar o pedido</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
