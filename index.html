@@ -12,6 +12,33 @@
     <title>DrivenEats</title>
 </head>
 <body>
+    <div class="corpo-modal esconder">
+        <div class="modal">
+            <p class="topo-modal negrito">Confirme seu pedido</p>
+            <div class="tabela-modal">
+                <div class="prato-modal">
+                    <p class="prato-nome">Nome prato</p>
+                    <p class="prato-preco">valor</p>
+                </div>
+                <div class="bebida-modal">
+                    <p class="bebida-nome">Nome bebida</p>
+                    <p class="bebida-preco">valor</p>
+                </div>
+                <div class="sobremesa-modal">
+                    <p class="sobremesa-nome">nome sobremesa</p>
+                    <p class="sobremesa-preco">valor</p>
+                </div>
+                <div class="total-modal negrito">
+                    <p class="total-nome">Total</p>
+                    <p class="total-preco">valor</p>
+                </div>
+            </div>
+            <div class="botoes-modal">
+                <button class="botao-modal-confirmar negrito" onclick="pedirNovasInfo(); fazerPedido();">Tudo certo, pode pedir!</button>
+                <button class="bota-modal-cancelar negrito" onclick="fecharModal()">Cancelar</button>
+            </div>
+        </div>
+    </div> 
     <div class="topo">
         <p class="titulo">DrivenEats</p>
         <p class="sub-titulo">Sua comida em 6 minutos</p>
@@ -26,7 +53,11 @@
                 <p class="nome">Bife Acebolado</p>
                 <p class="descricao">Com cenoura e banana amilanesa</p>
                 <p class="preco">R$ 14,90</p>
-                <div id="borda"></div>
+                <p class="valor">14.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+                
+                    
+                
             </div>
             <div class="prato" id="brasileira" onclick="marcarPrato('#brasileira'); mudarBotao();">
                 <div class="imagem">
@@ -34,8 +65,12 @@
                 </div>
                 <p class="nome">A Brasileira</p>
                 <p class="descricao">Com couve, cenoura, farofa e banana amilanesa</p>
-                <p class="preco">R$ 14,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 15,90</p>
+                <p class="valor">15.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+                
+                    
+                
             </div>
             <div class="prato" id="penne" onclick="marcarPrato('#penne'); mudarBotao();">
                 <div class="imagem">
@@ -43,8 +78,12 @@
                 </div>
                 <p class="nome">Penne 4 Queijos</p>
                 <p class="descricao">Com mignon ao molho madeira com ervilhas</p>
-                <p class="preco">R$ 14,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 16,90</p>
+                <p class="valor">16.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+                
+                    
+                
             </div>
             <div class="prato" id="risoto" onclick="marcarPrato('#risoto'); mudarBotao();">
                 <div class="imagem">
@@ -52,8 +91,12 @@
                 </div>
                 <p class="nome">Risoto Alho Poró</p>
                 <p class="descricao">Com alcatra ao molho madeira com ervilhas</p>
-                <p class="preco">R$ 14,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 17,90</p>
+                <p class="valor">17.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+                
+                    
+                
             </div>
         </div>
         <div class="texto-info">Agora, sua bebida</div>
@@ -65,7 +108,11 @@
                 <p class="nome">Coca gelada</p>
                 <p class="descricao">Lata 350ml</p>
                 <p class="preco">R$ 4,90</p>
-                <div id="borda"></div>
+                <p class="valor">4.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+                
+                    
+                
             </div>
             <div class="bebida" id="sprite" onclick="marcarBebida('#sprite'); mudarBotao();">
                 <div class="imagem">
@@ -73,8 +120,12 @@
                 </div>
                 <p class="nome">Sprite gelada</p>
                 <p class="descricao">Lata 350ml</p>
-                <p class="preco">R$ 4,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 3,90</p>
+                <p class="valor">3.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+                
+                    
+                
             </div>
             <div class="bebida" id="fanta" onclick="marcarBebida('#fanta'); mudarBotao();">
                 <div class="imagem">
@@ -82,8 +133,10 @@
                 </div>
                 <p class="nome">Fanta gelada</p>
                 <p class="descricao">Lata 350ml</p>
-                <p class="preco">R$ 4,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 2,90</p>
+                <p class="valor">2.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+
             </div>
             <div class="bebida" id="guarana" onclick="marcarBebida('#guarana'); mudarBotao();">
                 <div class="imagem">
@@ -91,8 +144,10 @@
                 </div>
                 <p class="nome">Guaraná gelado</p>
                 <p class="descricao">Lata 350ml</p>
-                <p class="preco">R$ 4,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 1,90</p>
+                <p class="valor">1.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+
             </div>
         </div>
         <div class="texto-info">Por fim, sua sobremesa</div>
@@ -104,7 +159,9 @@
                 <p class="nome">Arroz Doce</p>
                 <p class="descricao">Com ou sem canela</p>
                 <p class="preco">R$ 7,90</p>
-                <div id="borda"></div>
+                <p class="valor">7.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+
             </div>
             <div class="sobremesa" id="bolo" onclick="marcarSobremesa('#bolo'); mudarBotao();">
                 <div class="imagem">
@@ -112,8 +169,10 @@
                 </div>
                 <p class="nome">Bolo de Pote</p>
                 <p class="descricao">De morango</p>
-                <p class="preco">R$ 7,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 6,90</p>
+                <p class="valor">6.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+
             </div>
             <div class="sobremesa" id="fruta" onclick="marcarSobremesa('#fruta'); mudarBotao();">
                 <div class="imagem">
@@ -121,8 +180,10 @@
                 </div>
                 <p class="nome">Salada de Fruta</p>
                 <p class="descricao">Variadas frutas</p>
-                <p class="preco">R$ 7,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 5,90</p>
+                <p class="valor">5.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
+
             </div>
             <div class="sobremesa" id="tortinha" onclick="marcarSobremesa('#tortinha'); mudarBotao();">
                 <div class="imagem">
@@ -130,13 +191,14 @@
                 </div>
                 <p class="nome">Tortinha de Maça</p>
                 <p class="descricao">Uma delícia</p>
-                <p class="preco">R$ 7,90</p>
-                <div id="borda"></div>
+                <p class="preco">R$ 8,90</p>
+                <p class="valor">8.90</p>
+                <div class="esconder" id="borda"><img src="./imgs/vector.png" /></div>
             </div>
-        </div> 
+        </div>
     </div>
     <div class="bottom">
-        <div class="indisponivel" id="botao">
+        <div class="indisponivel" id="botao" onclick="abrirModal()">
             <button>Selecione os 3 itens para fechar o pedido</button>
         </div>
     </div>

@@ -7,6 +7,11 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.negrito {
+    font-weight: bold;
+}
+
 /* ---------TOPO--------- */
 .topo {
     background-color: #CF2B2B;
@@ -61,6 +66,7 @@ body {
     flex-direction: column;
     margin: 17px 8px;
     position: relative;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .borda {
@@ -69,6 +75,23 @@ body {
     height: 216px;
     border-radius: 9px;
     position: absolute;
+}
+
+.borda img {
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+}
+
+.valor {
+    display: none;
+}
+
+
+.img-borda {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
 }
 
 .imagem {
@@ -155,3 +178,85 @@ body {
 }
 
 /* ---------BOTTOM--------- */
+
+/* ---------MODAL--------- */
+.corpo-modal {
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.modal {
+    background-color: #50D074;
+    border-radius: 9px;
+    height: 353px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo-modal {
+    margin-top: 21px;
+}
+
+.tabela-modal {
+    width: 90%;
+    height: 147px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tabela-modal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal p{
+    color: white;
+
+}
+
+.botoes-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.botao-modal-confirmar {
+    border-radius: 100px;
+    width: 90%;
+    background-color: white;
+    border: none;
+    color: #50D074;
+    font-size: 22px;
+    height: 52px;
+}
+
+.bota-modal-cancelar {
+    background-color: #50D074;
+    border: none;
+    color: white;
+    font-size: 20px;
+    height: 52px;
+}
+/* ---------MODAL--------- */
+
+.esconder {
+    display: none;
+}
